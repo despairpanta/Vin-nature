@@ -56,6 +56,7 @@ video {
 body {
   background: #f5a787;
   font-family: ff-scala-sans-pro, sans-serif;
+  padding: 0;
 }
 
 .philosophy {
@@ -71,4 +72,190 @@ body {
 }
 .degustation {
   background: #5b97a3;
+}
+
+//------>header
+
+.container-fluid {
+  padding: 0;
+}
+
+.container-fluid .row {
+  padding: 30px;
+}
+
+header {
+  position: relative;
+  margin-bottom: 85px;
+}
+
+.header-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-background {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.navigation,
+.wine-header,
+.slogan p {
+  position: relative;
+  z-index: 3;
+}
+
+.wine-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottle-decoration {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+}
+
+.shadow-bottles-header {
+  position: relative;
+  z-index: 1;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wine-header .img-bottle-header {
+  width: 132.978px;
+  height: 517px;
+}
+
+.slogan p {
+  color: #fff;
+  text-align: center;
+  font-family: "Scala Sans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.slogan .scrolling-text {
+  top: -100px;
+  left: 0;
+  position: relative;
+  z-index: 0;
+}
+
+// navigation
+
+.logo-sda {
+  width: 50%;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  color: #000;
+  font-family: "Scala Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-background {
+  display: flex;
+}
+
+.navigation-left .nav-domaine,
+.navigation-right .nav-contact {
+  display: flex;
+  height: 19px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 44px;
+}
+
+.navigation-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.navigation-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 23px;
+}
+
+// button
+
+.button-language {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border-radius: 11px;
+  background: #000;
+}
+
+.button-language p {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+}
+
+.button-language svg {
+  width: 8px;
+  height: 7px;
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+// animation
+
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.animate-text {
+  font-family: "Scala Sans Pro";
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  animation: animate-text 30s linear infinite;
+}
+
+@keyframes animate-text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }

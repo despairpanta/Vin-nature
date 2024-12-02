@@ -5,32 +5,97 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="stylesheet" href="https://use.typekit.net/suq8tgp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/suq8tgp.css" />
   </head>
   <body>
     <!-- header -->
     <div class="container-fluid">
-            <h1>header</h1>
-            <div class="row">
-              <div class="col-4">langue + nav</div>
-              <div class="col-4">logo</div>
-              <div class="col-3 offset-1">shopping + nav</div>
+      <header>
+        <div class="header-background col-12">
+          <img src="img/header-background.png" alt="" />
+        </div>
+        <div class="row navigation">
+          <div class="col-4 navigation-left">
+            <div class="button-language">
+              <p>FR</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+              >
+                <path
+                  d="M4 7.5L-6.44261e-08 0.5L8 0.500001L4 7.5Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
             </div>
-            <div class="row">
-              <div class="col-6 offset-3">photo bouteille</div>
+            <div class="nav-domaine">
+              <a href="">Le domaine</a>
+              <a href="">nos vins</a>
+              <a href="">philosophie</a>
             </div>
-            <div class="row">
-              <div>text animation</div>
-              <div class="col-8 offset-2">slogan</div>
+          </div>
+          <div class="col-4">
+            <img class="logo-sda" src="img/Logo-SDA.svg" alt="" />
+          </div>
+          <div class="col-3 offset-1 navigation-right">
+            <div class="costumer-space">clien et cart</div>
+            <div class="nav-contact">
+              <a href="">Le domaine</a>
+              <a href="">nos vins</a>
+              <a href="">philosophie</a>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-3 wine-header">
+            <div class="bottle-decoration">
+              <img
+                class="img-bottle-header"
+                src="img/mockup-white-wine.png"
+                alt=""
+              />
+              <img
+                class="img-bottle-header"
+                src="img/mockup-red-wine.png"
+                alt=""
+              />
+            </div>
+            <div class="shadow-bottles-header">
+              <img src="img/bottles-shadow-header.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row slogan">
+          <div class="scrolling-text">
+            <div class="animate-text">
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+              <span>Sabbat des ailes °</span>
+            </div>
+          </div>
+          <div class="col-8 offset-2">
+            <p>
+              Au cœur des landes oubliées, Le Sabbat des Ailes révèle l'âme de
+              la nature sauvage
+            </p>
+          </div>
+        </div>
+      </header>
     </div>
     <!-- article philosophie -->
     <div class="philosophy">
       <div class="container">
         <div class="row">
           <h1>article philosophie</h1>
-            <div class="col-10 offset-1">contenu</div>
-          </div>
+          <div class="col-10 offset-1">contenu</div>
         </div>
       </div>
     </div>
@@ -52,10 +117,7 @@
         <h1>article vigneron</h1>
         <div class="row">
           <div class="col">img vigneron.ne</div>
-          <div class="col-6">
-           contenu
-            </div>
-          </div>
+          <div class="col-6">contenu</div>
         </div>
       </div>
     </div>
@@ -65,9 +127,7 @@
         <h1>article decouverte</h1>
         <div class="row">
           <div class="col">img cave</div>
-          <div class="col">
-           contenu
-          </div>
+          <div class="col">contenu</div>
         </div>
       </div>
     </div>
@@ -76,25 +136,16 @@
       <h1>footer</h1>
       <div class="row">
         <div class="col-2">contacte</div>
-         <div class="col-4 offset-2">logo</div>
-         <div class="col-2 offset-2">langue</div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            info
-          </div>
-          <div class="col-4 offset-1">
-            oiseau + newsletter
-          </div>
-          <div class="col-2 offset-2">
-            certification logo
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            copyright
-          </div>
-        </div>
+        <div class="col-4 offset-2">logo</div>
+        <div class="col-2 offset-2">langue</div>
+      </div>
+      <div class="row">
+        <div class="col-3">info</div>
+        <div class="col-4 offset-1">oiseau + newsletter</div>
+        <div class="col-2 offset-2">certification logo</div>
+      </div>
+      <div class="row">
+        <div class="col">copyright</div>
       </div>
     </div>
     <script src="js/main.js" type="module"></script>
