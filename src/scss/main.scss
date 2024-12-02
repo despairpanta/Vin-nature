@@ -132,13 +132,18 @@ header {
   z-index: 1;
   bottom: 60px;
   left: 0;
+}
+
+.shadow-bottles-header img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .wine-header .img-bottle-header {
-  width: 132.978px;
-  height: 517px;
+  // width: 132.978px;
+  // height: 517px;
+  width: 20%;
+  height: auto;
 }
 
 .slogan p {
