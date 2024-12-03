@@ -229,7 +229,7 @@ header {
   height: 25px;
 }
 
-// button
+// button language
 
 .button-language {
   display: inline-flex;
@@ -252,6 +252,136 @@ header {
   width: 8px;
   height: 7px;
   fill: rgba(255, 255, 255, 0.6);
+}
+
+// ///////<-------ARTICLE------->////////
+
+.article {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
+.article h1 {
+  color: #000;
+  font-family: "Fakir Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.article p {
+  color: #000;
+  font-family: "Scala Sans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: #000;
+  font-family: "Scala Sans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  align-items: flex-start;
+}
+
+.article-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 73px;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+// philosophy-->
+.philosophy .article h1,
+.philosophy .article p {
+  text-align: center;
+}
+
+.philosophy .button {
+  margin: auto;
+}
+
+// ARTICLE VIN---->
+
+.wine-article {
+  position: relative;
+}
+
+.path-wine-article {
+  background: #e6edaa;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0 100%, 0% 20%);
+  border-radius: 60% 60% 0% 0% / 60% 60% 0%;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wine-article-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.wine-article h1 {
+  color: #000;
+  font-family: "Fakir Pro";
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.article-wine-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-wine-presentation .img-bottle-presentation {
+  // width: 132.978px;
+  // height: 517px;
+  width: 35%;
+  height: auto;
+}
+
+// ///////<-------BUTTON------->////////
+
+.button {
+  display: inline-flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #000;
+}
+
+.button a {
+  color: #fff;
+  text-align: center;
+  font-family: "Scala Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 // ///////<-------ANIMATION------->////////
@@ -281,6 +411,37 @@ header {
   to {
     transform: translate3d(-100%, 0, 0);
   }
+}
+
+// ARTICLE VIN ANIMATION--->
+
+.text-animation-vin.left {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: translateY(-100%) rotate(90deg);
+}
+
+.text-animation-vin.right {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: translateY(-100%) rotate(-90deg);
+}
+
+.text-animation-vin .scrolling-text {
+  width: auto;
+}
+
+.text-animation-vin .animate-text {
+  font-family: "Scala Sans Pro";
+  font-size: 90px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  animation: animate-text 40s linear infinite;
 }
 
 // /////<------RESPONSIVE------>/////
