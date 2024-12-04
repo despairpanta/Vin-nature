@@ -391,11 +391,24 @@ footer h3 {
 .email-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .footer-illustration {
   width: 20%;
   height: auto;
+}
+
+.email-inscription {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email-inscription h2 {
+  text-align: center;
 }
 
 .button.email-button {
