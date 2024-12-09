@@ -522,6 +522,19 @@ footer .container {
   gap: 10px;
   border-radius: 18px;
   background: #000;
+  // background-repeat: repeat-x;
+  // background-position: 0 -100%;
+  // background-image: url(../img/button-hover-background.svg);
+  // transition: 1s ease;
+  // transform: background-position 1.5s ease-in-out;
+}
+
+.button-language,
+.button {
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  background-image: url(../img/button-hover-background.svg);
+  transition: 1s ease;
 }
 
 .button a {
@@ -534,14 +547,17 @@ footer .container {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
+  // transition: 1s ease;
 }
 
 // Hover--->
-.button:hover {
-  background-repeat: repeat-x;
-  background-position: 0 -100%;
-  background-image: url(../img/button-hover-background.svg);
-  transition: 1.5s ease;
+.button:hover,
+.button-language:hover {
+  // color: #000;
+  background-position: center;
+  transform: background-image translateY(50%);
+  // background-image: url(../img/button-hover-background.svg);
+  // background-position: 0 100%;
 }
 
 // ///////<-------ANIMATION------->////////
