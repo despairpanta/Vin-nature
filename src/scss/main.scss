@@ -172,7 +172,7 @@ header {
 // navigation
 
 .logo-sda {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -308,13 +308,17 @@ h2 {
   gap: 26px;
 }
 
-// philosophy-->
+// philosophy and call to action-->
 .philosophy .article h1,
-.philosophy .article p {
+.philosophy .article p,
+.Wine-call-to-action .article h1,
+.Wine-call-to-action .article h2,
+.Wine-call-to-action .article p {
   text-align: center;
 }
 
-.philosophy .button {
+.philosophy .button,
+.Wine-call-to-action .button {
   margin: auto;
 }
 
@@ -379,6 +383,13 @@ footer h3 {
   text-transform: capitalize;
 }
 
+footer .container {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 // contact--->
 .footer-contact {
   display: flex;
@@ -405,6 +416,8 @@ footer h3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: auto;
+  height: auto;
 }
 
 .email-inscription h2 {
@@ -415,6 +428,7 @@ footer h3 {
   display: flex;
   justify-content: space-between;
   width: 293px;
+  height: auto;
   padding: 20px 30px;
   align-items: center;
   gap: 10px;
@@ -425,6 +439,21 @@ footer h3 {
 
 .button.email-button a {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.language-button-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 // infos section--->
@@ -478,6 +507,11 @@ footer h3 {
   font-weight: 300;
 }
 
+.certification img {
+  width: 50%;
+  height: auto;
+}
+
 // ///////<-------BUTTON------->////////
 
 .button {
@@ -500,6 +534,14 @@ footer h3 {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+// Hover--->
+.button:hover {
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  background-image: url(../img/button-hover-background.svg);
+  transition: 1.5s ease;
 }
 
 // ///////<-------ANIMATION------->////////
@@ -663,3 +705,129 @@ footer h3 {
     font-size: 20px;
   }
 }
+
+// //////PAGE PRODUCT WHITE//////
+
+body.product-white-wine {
+  background: #c1a9d4;
+}
+
+.header-product {
+  margin-bottom: 0;
+}
+
+.product-white {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 480px;
+}
+
+.product-white .wine-header {
+  // position: absolute;
+  // top: 45%;
+  // height: 100%;
+  aspect-ratio: 2/3;
+  transform: translateY(50%);
+}
+
+.product-white .bottle-decoration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 80% 80% 0% 0% / 60% 60% 0%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    radial-gradient(47.1% 48.13% at 50.17% 48.54%, #e6edaa 0%, #000 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-white .img-bottle-header {
+  position: absolute;
+  bottom: 11%;
+  width: 30%;
+  height: auto;
+}
+
+.white-product-info {
+  background: #e6edaa;
+  margin: 0;
+}
+
+.white-text-info {
+  margin-top: 240px;
+}
+
+.white-product-info p {
+  font-family: "Scala Sans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-white .bottle-decoration .cart-button {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 18px;
+  background: #9b59cf;
+  padding: 20px 30px;
+}
+
+.cart-button p {
+  font-family: "Scala Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cart-button img {
+  width: 100%;
+  height: auto;
+}
+
+.Wine-call-to-action {
+  background: #c1a9d4;
+}
+
+// hover--->
+
+.product-white .bottle-decoration:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    radial-gradient(47.1% 48.13% at 50.17% 48.54%, #9b59cf 0%, #000 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-white .bottle-decoration .cart-button:hover,
+.cart-button:hover p,
+.cart-button:hover img {
+  background: #e6edaa;
+  color: #000;
+}
+
+// .product-white .bottle-decoration .cart-button a {
+//   display: flex;
+//   flex-direction: row;
+//   align-content: flex-end;
+//   justify-content: space-between;
+//   align-items: center;
+// }
