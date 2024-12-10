@@ -354,6 +354,23 @@ h2 {
 
 // ARTICLE VIN---->
 
+.wine-article-info svg {
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  overflow: visible;
+}
+
+text {
+  fill: #000;
+  font-family: "Fakir Pro";
+  font-size: 175px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
 .wine-article {
   position: relative;
 }
@@ -373,15 +390,15 @@ h2 {
   margin-bottom: 85px;
 }
 
-.wine-article h1 {
-  color: #000;
-  font-family: "Fakir Pro";
-  font-size: 68px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
+// .wine-article h1 {
+//   color: #000;
+//   font-family: "Fakir Pro";
+//   font-size: 68px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+//   text-align: center;
+// }
 
 .article-wine-presentation {
   display: flex;
