@@ -15,17 +15,17 @@ video {
 
 @import "bootstrap/scss/bootstrap-grid";
 
-.row + .row {
-  margin-top: 16px;
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
 
 // FONT
 
@@ -174,6 +174,7 @@ header {
 .logo-sda {
   width: 100%;
   height: auto;
+  transition: filter 0.4s ease;
 }
 
 .navigation {
@@ -227,6 +228,17 @@ header {
 .user-space .icon {
   width: 27px;
   height: 25px;
+}
+
+// navigation hover--->
+
+.navigation a:hover {
+  color: #dc5b26;
+}
+
+.logo-sda:hover {
+  filter: drop-shadow(0px 0px 25px #dc5b26);
+  // animation: shadow-drop-center 0.4s both;
 }
 
 // button language
@@ -364,6 +376,37 @@ h2 {
   // height: 517px;
   width: 30%;
   height: auto;
+  // animation-name: wiggle;
+  // animation-duration: 2s;
+  // animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+}
+
+// hover article vin--->
+
+.wine-article-info:hover .img-bottle-presentation {
+  animation-name: wiggle;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }
 
 // ///////<-------FOOTER------->////////
@@ -534,7 +577,7 @@ footer .container {
   background-repeat: repeat-x;
   background-position: 0 -100%;
   background-image: url(../img/button-hover-background.svg);
-  transition: 1s ease;
+  transition: 0.7s ease;
 }
 
 .button a {
@@ -609,6 +652,7 @@ footer .container {
 
 .text-animation-vin .scrolling-text {
   width: auto;
+  transition: 1s ease;
 }
 
 .text-animation-vin .animate-text {
@@ -618,6 +662,12 @@ footer .container {
   text-transform: uppercase;
   color: white;
   animation: animate-text 40s linear infinite;
+}
+
+// article vin animation hover--->
+
+.wine-article:hover .text-animation-vin .scrolling-text {
+  background: #dc5b26;
 }
 
 // /////<------RESPONSIVE------>/////
@@ -745,8 +795,8 @@ body.product-white-wine {
   // position: absolute;
   // top: 45%;
   // height: 100%;
-  aspect-ratio: 2/3;
-  transform: translateY(50%);
+  aspect-ratio: 30/40;
+  transform: translateY(40%);
 }
 
 .product-white .bottle-decoration {
@@ -769,8 +819,8 @@ body.product-white-wine {
 
 .product-white .img-bottle-header {
   position: absolute;
-  bottom: 11%;
-  width: 30%;
+  bottom: 13%;
+  width: 33%;
   height: auto;
 }
 
@@ -779,8 +829,12 @@ body.product-white-wine {
   margin: 0;
 }
 
-.white-text-info {
+.product-text-info {
   margin-top: 240px;
+  padding-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .white-product-info p {
