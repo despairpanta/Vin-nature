@@ -320,6 +320,24 @@ h2 {
   gap: 26px;
 }
 
+.vigneron .article-img {
+  margin-left: calc((100vw - 1116px) / 2 * -1);
+  padding-right: 50px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.degustation .article-img {
+  margin-right: calc((100vw - 1116px) / 2 * -1);
+  padding-left: 50px;
+
+  img {
+    width: 100%;
+  }
+}
+
 // philosophy and call to action-->
 .philosophy .article h1,
 .philosophy .article p,
@@ -376,6 +394,7 @@ h2 {
   // height: 517px;
   width: 30%;
   height: auto;
+  transition: filter 0.4s ease;
   // animation-name: wiggle;
   // animation-duration: 2s;
   // animation-timing-function: ease-in-out;
@@ -389,6 +408,7 @@ h2 {
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+  filter: drop-shadow(0px 0px 25px #9b59cf);
 }
 
 @keyframes wiggle {
@@ -667,7 +687,7 @@ footer .container {
 // article vin animation hover--->
 
 .wine-article:hover .text-animation-vin .scrolling-text {
-  background: #dc5b26;
+  background: #9b59cf;
 }
 
 // /////<------RESPONSIVE------>/////
