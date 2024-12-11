@@ -27,6 +27,7 @@ video {
 //   border: 1px solid rgba(86, 61, 124, 0.2);
 // }
 
+// -------------------------------------------------
 // FONT
 
 // SCALA--
@@ -73,7 +74,7 @@ body {
 .degustation {
   background: #5b97a3;
 }
-
+// -------------------------------------------------
 //------>header
 
 .container-fluid {
@@ -137,7 +138,6 @@ header {
   position: absolute;
   z-index: 1;
   bottom: 0%;
-  // left: 0;
 }
 
 .shadow-bottles-header img {
@@ -146,8 +146,6 @@ header {
 }
 
 .wine-header .img-bottle-header {
-  // width: 132.978px;
-  // height: 517px;
   width: 20%;
   height: auto;
 }
@@ -168,13 +166,13 @@ header {
   position: absolute;
   z-index: 0;
 }
-
+// -------------------------------------------------
 // navigation
 
 .logo-sda {
   width: 100%;
   height: auto;
-  transition: filter 0.4s ease;
+  transition: 0.8s ease;
 }
 
 .navigation {
@@ -226,7 +224,7 @@ header {
   gap: 31px;
 }
 
-.user-space .icon {
+.user-space .icon svg {
   width: 27px;
   height: 25px;
 }
@@ -234,7 +232,7 @@ header {
 .icon path {
   transition: 1s ease;
 }
-
+// -------------------------------------------------
 // navigation hover--->
 
 .navigation a:hover {
@@ -246,35 +244,13 @@ header {
 }
 
 .logo-sda:hover {
-  filter: drop-shadow(0px 0px 25px #dc5b26);
-  // animation: shadow-drop-center 0.4s both;
+  animation-name: scale;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  transform: scale(1.1);
 }
 
-// button language
-
-.button-language {
-  display: inline-flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  border-radius: 11px;
-  background: #000;
-}
-
-.button-language p {
-  font-family: ff-scala-sans-pro, sans-serif;
-  font-weight: 900;
-  font-size: 15px;
-  color: white;
-}
-
-.button-language svg {
-  width: 8px;
-  height: 7px;
-  fill: rgba(255, 255, 255, 0.6);
-}
-
+// -------------------------------------------------
 // ///////<-------ARTICLE------->////////
 
 .article {
@@ -282,7 +258,7 @@ header {
   margin-bottom: 85px;
 }
 
-.article h1 {
+article h1 {
   color: #000;
   font-family: "Fakir Pro";
   font-size: 40px;
@@ -291,7 +267,7 @@ header {
   line-height: normal;
 }
 
-.article p {
+article p {
   color: #000;
   font-family: "Scala Sans Pro";
   font-size: 20px;
@@ -346,7 +322,7 @@ h2 {
     width: 100%;
   }
 }
-
+// -------------------------------------------------
 // philosophy and call to action-->
 .philosophy .article h1,
 .philosophy .article p,
@@ -360,7 +336,7 @@ h2 {
 .Wine-call-to-action .button {
   margin: auto;
 }
-
+// -------------------------------------------------
 // ARTICLE VIN---->
 
 .wine-article-info svg {
@@ -399,16 +375,6 @@ text {
   margin-bottom: 85px;
 }
 
-// .wine-article h1 {
-//   color: #000;
-//   font-family: "Fakir Pro";
-//   font-size: 68px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: normal;
-//   text-align: center;
-// }
-
 .article-wine-presentation {
   display: flex;
   flex-direction: column;
@@ -416,17 +382,11 @@ text {
 }
 
 .article-wine-presentation .img-bottle-presentation {
-  // width: 132.978px;
-  // height: 517px;
   width: 30%;
   height: auto;
   transition: filter 0.4s ease;
-  // animation-name: wiggle;
-  // animation-duration: 2s;
-  // animation-timing-function: ease-in-out;
-  // animation-iteration-count: infinite;
 }
-
+// -------------------------------------------------
 // hover article vin--->
 
 .wine-article-info:hover .img-bottle-presentation {
@@ -455,10 +415,12 @@ text {
   }
 }
 
+// -------------------------------------------------
 // ///////<-------FOOTER------->////////
 
 footer {
   background: white;
+  padding-bottom: 30px;
 }
 
 footer h2 {
@@ -478,14 +440,14 @@ footer .container {
   flex-direction: column;
   gap: 40px;
 }
-
+// -------------------------------------------------
 // contact--->
 .footer-contact {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
+// -------------------------------------------------
 // email--->
 
 .email-section {
@@ -497,7 +459,7 @@ footer .container {
 }
 
 .footer-illustration {
-  width: 20%;
+  width: 30%;
   height: auto;
 }
 
@@ -544,7 +506,7 @@ footer .container {
   align-items: flex-start;
   justify-content: flex-end;
 }
-
+// -------------------------------------------------
 // infos section--->
 
 .footer-infos-section {
@@ -570,7 +532,7 @@ footer .container {
   flex-direction: column;
   gap: 16px;
 }
-
+// -------------------------------------------------
 // logo footer--->
 .logo-footer img {
   width: 40%;
@@ -581,7 +543,7 @@ footer .container {
   display: flex;
   justify-content: center;
 }
-
+// -------------------------------------------------
 // copyright--->
 .copyright {
   display: flex;
@@ -601,6 +563,7 @@ footer .container {
   height: auto;
 }
 
+// -------------------------------------------------
 // ///////<-------BUTTON------->////////
 
 .button {
@@ -638,6 +601,33 @@ footer .container {
   text-decoration: none;
 }
 
+// -------------------------------------------------
+// button language
+
+.button-language {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border-radius: 11px;
+  background: #000;
+}
+
+.button-language p {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+}
+
+.button-language svg {
+  width: 8px;
+  height: 7px;
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+// -------------------------------------------------
 // Hover--->
 .button:hover,
 .button-language:hover {
@@ -648,6 +638,7 @@ footer .container {
   // background-position: 0 100%;
 }
 
+// -------------------------------------------------
 // ///////<-------ANIMATION------->////////
 
 .scrolling-text {
@@ -676,7 +667,7 @@ footer .container {
     transform: translate3d(-100%, 0, 0);
   }
 }
-
+// -------------------------------------------------
 // ARTICLE VIN ANIMATION--->
 
 .text-animation-vin.left {
@@ -708,23 +699,24 @@ footer .container {
   color: white;
   animation: animate-text 40s linear infinite;
 }
-
+// -------------------------------------------------
 // article vin animation hover--->
 
 .wine-article:hover .text-animation-vin .scrolling-text {
   background: #9b59cf;
 }
 
+// -------------------------------------------------
 // /////<------RESPONSIVE------>/////
 
 // navigation-->
 
-// big
+// XL
 
-@media (min-width: 1671px) {
+@media (min-width: 1200px) {
   // navigation--->
   .navigation a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .navigation-left .nav-domaine,
   .navigation-right .nav-contact {
@@ -733,14 +725,19 @@ footer .container {
   .slogan p {
     font-size: 30px;
   }
+  // wine page--->
+  .product-text-info {
+    margin-top: 240px;
+    padding-bottom: 85px;
+  }
 }
+// -------------------------------------------------
+// L
 
-// large
-
-@media (min-width: 1250px) and (max-width: 1670px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   // navigation--->
   .navigation a {
-    font-size: 13px;
+    font-size: 11px;
   }
   .navigation-left .nav-domaine,
   .navigation-right .nav-contact {
@@ -754,14 +751,19 @@ footer .container {
     width: 27px;
     height: 25px;
   }
+  // wine page--->
+  .product-text-info {
+    margin-top: 240px;
+    padding-bottom: 85px;
+  }
 }
+// -------------------------------------------------
+// MD
 
-// mid
-
-@media (min-width: 850px) and (max-width: 1249px) {
+@media (min-width: 768px) and (max-width: 991px) {
   // navigation--->
   .navigation a {
-    font-size: 10px;
+    font-size: 8px;
   }
   .navigation-left .nav-domaine,
   .navigation-right .nav-contact {
@@ -781,25 +783,36 @@ footer .container {
   .slogan .scrolling-text {
     bottom: 30%;
   }
+  .user-space .icon svg {
+    width: 25px;
+    height: 23px;
+  }
+  // wine page--->
+  .product-text-info {
+    margin-top: 240px;
+    padding-bottom: 85px;
+  }
   // animation--->
   .animate-text {
     font-size: 20px;
   }
 }
+// -------------------------------------------------
+// SM
 
-// small
-
-@media (max-width: 849px) {
+@media (max-width: 767px) {
   // navigation--->
   .navigation a {
     font-size: 8px;
   }
-  .navigation-left .nav-domaine,
-  .navigation-right .nav-contact {
-    gap: 15px;
+  .navigation-left,
+  .navigation-right {
+    gap: 10px;
   }
+  .navigation-left .nav-domaine,
+  .navigation-right .nav-contact,
   .user-space {
-    gap: 15px;
+    gap: 13px;
   }
   .user-space .icon {
     width: 27px;
@@ -811,12 +824,38 @@ footer .container {
   header {
     margin-bottom: 30px;
   }
+  .user-space .icon svg {
+    width: 23px;
+    height: 21px;
+  }
+  // button--->
+  .button-language p {
+    font-size: 10px;
+  }
+  .button {
+    padding: 15px 35px;
+  }
+  .button a {
+    font-size: 13px;
+  }
+  // text--->
+  article p,
+  article h2 {
+    font-size: 15px;
+  }
+  // wine page--->
+  .product-text-info {
+    margin-top: 150px;
+    padding-bottom: 50px;
+  }
   // animation--->
   .animate-text {
     font-size: 20px;
   }
 }
 
+// -------------------------------------------------
+// -------------------------------------------------
 // //////PAGE PRODUCT WHITE//////
 
 body.product-white-wine {
@@ -875,19 +914,11 @@ body.product-white-wine {
 }
 
 .product-text-info {
-  margin-top: 240px;
-  padding-bottom: 85px;
+  // margin-top: 240px;
+  // padding-bottom: 85px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.white-product-info p {
-  font-family: "Scala Sans Pro";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .product-white .bottle-decoration .cart-button {
@@ -919,7 +950,7 @@ body.product-white-wine {
 .Wine-call-to-action {
   background: #c1a9d4;
 }
-
+// -------------------------------------------------
 // hover--->
 
 .product-white .bottle-decoration:hover {
