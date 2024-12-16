@@ -55,7 +55,7 @@ video {
 // font-style: normal;
 
 body {
-  background: #f5a787;
+  background: #c1a9d4;
   font-family: ff-scala-sans-pro, sans-serif;
   padding: 0;
 }
@@ -75,7 +75,7 @@ body {
   background: #5b97a3;
 }
 // -------------------------------------------------
-//------>header
+// ///////<-------header------->////////
 
 .container-fluid {
   padding: 0;
@@ -86,8 +86,9 @@ body {
 }
 
 header {
+  background: #f5a787;
   position: relative;
-  margin-bottom: 85px;
+  padding-bottom: 85px;
 }
 
 .logo-header {
@@ -315,23 +316,6 @@ h2 {
   gap: 26px;
 }
 
-// .vigneron .article-img {
-//   margin-left: calc((100vw - 1116px) / 2 * -1);
-//   padding-right: 50px;
-
-//   img {
-//     width: 100%;
-//   }
-// }
-
-// .degustation .article-img {
-//   margin-right: calc((100vw - 1116px) / 2 * -1);
-//   padding-left: 50px;
-
-//   img {
-//     width: 100%;
-//   }
-// }
 // -------------------------------------------------
 // philosophy and call to action-->
 .philosophy .article h1,
@@ -597,11 +581,6 @@ footer .container {
   gap: 10px;
   border-radius: 18px;
   background: #000;
-  // background-repeat: repeat-x;
-  // background-position: 0 -100%;
-  // background-image: url(../img/button-hover-background.svg);
-  // transition: 1s ease;
-  // transform: background-position 1.5s ease-in-out;
 }
 
 .button-language,
@@ -628,13 +607,13 @@ footer .container {
 // button language
 
 .button-language {
+  background-color: #000;
   display: inline-flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 9px;
   border-radius: 11px;
-  background: #000;
 }
 
 .button-language p {
@@ -665,9 +644,7 @@ footer .container {
 // ///////<-------ANIMATION------->////////
 
 .scrolling-text {
-  // width: 100%;
   overflow: hidden;
-  // display: flex;
   white-space: nowrap;
   background-color: black;
   padding: 10px;
@@ -697,8 +674,6 @@ footer .container {
   position: relative;
   top: 0;
   left: 0;
-  // width: 1000px;
-  // height: auto;
   transform-origin: bottom left;
   transform: translateY(-45%) rotate(90deg);
 }
@@ -707,8 +682,6 @@ footer .container {
   position: relative;
   top: 0;
   left: 0;
-  // width: 1000px;
-  // height: auto;
   transform-origin: bottom right;
   transform: translateY(-145%) rotate(-90deg);
 }
@@ -810,7 +783,6 @@ footer .container {
     padding-bottom: 85px;
   }
   // article--->
-  // article--->
   article {
     margin-top: 70px;
   }
@@ -876,7 +848,7 @@ footer .container {
     height: 25px;
   }
   header {
-    margin-bottom: 45px;
+    padding-bottom: 45px;
   }
   .container-fluid .row {
     padding: 15px;
@@ -990,7 +962,7 @@ footer .container {
   }
 
   header {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   .container-fluid .row {
     padding: 10px;
