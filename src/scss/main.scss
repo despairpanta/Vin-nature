@@ -129,9 +129,9 @@ header {
   z-index: 2;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 62px;
+  // gap: 62px;
 }
 
 .shadow-bottles-header {
@@ -140,13 +140,19 @@ header {
   bottom: 0%;
 }
 
+.bottle-decoration a {
+  position: relative;
+  width: 30%;
+}
+
 .shadow-bottles-header img {
   width: 100%;
   height: 100%;
 }
 
 .wine-header .img-bottle-header {
-  width: 20%;
+  position: relative;
+  width: 100%;
   height: auto;
 }
 
@@ -253,7 +259,7 @@ header {
 // -------------------------------------------------
 // ///////<-------ARTICLE------->////////
 
-.article {
+article {
   margin-top: 85px;
   margin-bottom: 85px;
 }
@@ -305,23 +311,23 @@ h2 {
   gap: 26px;
 }
 
-.vigneron .article-img {
-  margin-left: calc((100vw - 1116px) / 2 * -1);
-  padding-right: 50px;
+// .vigneron .article-img {
+//   margin-left: calc((100vw - 1116px) / 2 * -1);
+//   padding-right: 50px;
 
-  img {
-    width: 100%;
-  }
-}
+//   img {
+//     width: 100%;
+//   }
+// }
 
-.degustation .article-img {
-  margin-right: calc((100vw - 1116px) / 2 * -1);
-  padding-left: 50px;
+// .degustation .article-img {
+//   margin-right: calc((100vw - 1116px) / 2 * -1);
+//   padding-left: 50px;
 
-  img {
-    width: 100%;
-  }
-}
+//   img {
+//     width: 100%;
+//   }
+// }
 // -------------------------------------------------
 // philosophy and call to action-->
 .philosophy .article h1,
@@ -427,8 +433,17 @@ footer h2 {
   font-size: 18px;
 }
 
+footer p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 footer h3 {
-  font-family: "Scala Sans Pro";
   font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
@@ -467,7 +482,7 @@ footer .container {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -478,7 +493,6 @@ footer .container {
 .button.email-button {
   display: flex;
   justify-content: space-between;
-  width: 293px;
   height: auto;
   padding: 20px 30px;
   align-items: center;
@@ -486,6 +500,11 @@ footer .container {
   flex-shrink: 0;
   border-radius: 18px;
   background: rgba(0, 0, 0, 0.3);
+}
+
+.button.email-button img {
+  width: 10%;
+  height: auto;
 }
 
 .button.email-button a {
@@ -642,9 +661,9 @@ footer .container {
 // ///////<-------ANIMATION------->////////
 
 .scrolling-text {
-  width: 100%;
+  // width: 100%;
   overflow: hidden;
-  display: flex;
+  // display: flex;
   white-space: nowrap;
   background-color: black;
   padding: 10px;
@@ -656,7 +675,7 @@ footer .container {
   font-weight: 900;
   text-transform: uppercase;
   color: white;
-  animation: animate-text 40s linear infinite;
+  animation: animate-text 4s linear infinite;
 }
 
 @keyframes animate-text {
@@ -674,16 +693,20 @@ footer .container {
   position: relative;
   top: 0;
   left: 0;
+  // width: 1000px;
+  // height: auto;
   transform-origin: bottom left;
-  transform: translateY(-100%) rotate(90deg);
+  transform: translateY(-45%) rotate(90deg);
 }
 
 .text-animation-vin.right {
   position: relative;
   top: 0;
   left: 0;
+  // width: 1000px;
+  // height: auto;
   transform-origin: bottom right;
-  transform: translateY(-100%) rotate(-90deg);
+  transform: translateY(-145%) rotate(-90deg);
 }
 
 .text-animation-vin .scrolling-text {
@@ -697,7 +720,7 @@ footer .container {
   font-weight: 900;
   text-transform: uppercase;
   color: white;
-  animation: animate-text 40s linear infinite;
+  animation: animate-text 10s linear infinite;
 }
 // -------------------------------------------------
 // article vin animation hover--->
@@ -722,13 +745,33 @@ footer .container {
   .navigation-right .nav-contact {
     gap: 44px;
   }
-  .slogan p {
-    font-size: 30px;
-  }
+
   // wine page--->
   .product-text-info {
     margin-top: 240px;
     padding-bottom: 85px;
+  }
+  // article--->
+  .cart-button svg {
+    width: 27px;
+    height: 25px;
+  }
+  .vigneron .article-img {
+    margin-left: calc((100vw - 1116px) / 2 * -1);
+    padding-right: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .degustation .article-img {
+    margin-right: calc((100vw - 1116px) / 2 * -1);
+    padding-left: 50px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 // -------------------------------------------------
@@ -746,15 +789,66 @@ footer .container {
   .user-space {
     gap: 25px;
   }
-
-  .user-space .icon {
+  .container-fluid .row {
+    padding: 20px;
+  }
+  .user-space .icon svg {
     width: 27px;
     height: 25px;
+  }
+  .cart-button svg {
+    width: 25px;
+    height: 23px;
   }
   // wine page--->
   .product-text-info {
     margin-top: 240px;
     padding-bottom: 85px;
+  }
+  // article--->
+  // article--->
+  article {
+    margin-top: 70px;
+  }
+  .article-info-text {
+    gap: 52px;
+  }
+  .article-text {
+    gap: 20px;
+  }
+  .article-content {
+    gap: 40px;
+  }
+  // text--->
+  article p,
+  article h2,
+  .slogan p {
+    font-size: 17px;
+  }
+  article h1 {
+    font-size: 35px;
+  }
+  // animation--->
+  .text-animation-vin .animate-text {
+    font-size: 75px;
+  }
+  // ----------
+  .vigneron .article-img {
+    margin-left: calc((100vw - 960px) / 1 * -1);
+    padding-right: 14px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .degustation .article-img {
+    margin-right: calc((100vw - 960px) / 1 * -1);
+    padding-left: 14px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 // -------------------------------------------------
@@ -780,12 +874,85 @@ footer .container {
   header {
     margin-bottom: 45px;
   }
+  .container-fluid .row {
+    padding: 15px;
+  }
   .slogan .scrolling-text {
     bottom: 30%;
   }
-  .user-space .icon svg {
+  .user-space .icon {
     width: 25px;
     height: 23px;
+  }
+  .cart-button svg {
+    width: 23px;
+    height: 21px;
+  }
+  //footer--->
+  footer h2,
+  footer h3,
+  footer a,
+  footer p {
+    font-size: 13px;
+  }
+  .copyright a {
+    font-size: 13px;
+  }
+  // article--->
+  article {
+    margin-top: 55px;
+  }
+  .article-info-text {
+    gap: 32px;
+  }
+  .article-text {
+    gap: 20px;
+  }
+  .article-content {
+    gap: 30px;
+  }
+  // text--->
+  article p,
+  article h2,
+  .slogan p {
+    font-size: 15px;
+  }
+  article h1 {
+    font-size: 30px;
+  }
+  // -----------
+  .vigneron .article-img {
+    margin-left: calc((100vw - 540px) / 2 * -1);
+    padding-right: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .degustation .article-img {
+    margin-right: calc((100vw - 720px) / 2 * -1);
+    padding-left: 14px;
+
+    img {
+      width: 100%;
+    }
+  }
+  // button--->
+  .button-language p {
+    font-size: 12px;
+  }
+  .button {
+    padding: 15px 35px;
+  }
+  .button a,
+  .button.email-button a,
+  .cart-button p {
+    font-size: 13px;
+  }
+  .button.email-button,
+  .bottle-decoration .cart-button {
+    padding: 15px 25px;
   }
   // wine page--->
   .product-text-info {
@@ -795,6 +962,9 @@ footer .container {
   // animation--->
   .animate-text {
     font-size: 20px;
+  }
+  .text-animation-vin .animate-text {
+    font-size: 65px;
   }
 }
 // -------------------------------------------------
@@ -814,19 +984,70 @@ footer .container {
   .user-space {
     gap: 13px;
   }
-  .user-space .icon {
-    width: 27px;
-    height: 25px;
-  }
-  .slogan p {
-    font-size: 15px;
-  }
+
   header {
     margin-bottom: 30px;
+  }
+  .container-fluid .row {
+    padding: 10px;
   }
   .user-space .icon svg {
     width: 23px;
     height: 21px;
+  }
+  .cart-button svg {
+    width: 21px;
+    height: 19px;
+  }
+  //footer--->
+  footer h2,
+  footer h3,
+  footer a,
+  footer p {
+    font-size: 10px;
+  }
+  .copyright a {
+    font-size: 12px;
+  }
+  // article--->
+  article {
+    margin-top: 40px;
+  }
+  .article-info-text {
+    gap: 22px;
+  }
+  .article-text {
+    gap: 10px;
+  }
+  .article-content {
+    gap: 20px;
+  }
+  // text--->
+  article p,
+  article h2,
+  .slogan p {
+    font-size: 12px;
+  }
+  article h1 {
+    font-size: 25px;
+  }
+  // -----
+  .vigneron .article-img {
+    margin-left: calc((100vw - 540px) / 1 * -1);
+    padding-right: 14px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .degustation .article-img {
+    margin-right: calc((100vw - 540px) / 1 * -1);
+    padding-left: 14px;
+
+    img {
+      width: 100%;
+    }
   }
   // button--->
   .button-language p {
@@ -835,13 +1056,17 @@ footer .container {
   .button {
     padding: 15px 35px;
   }
-  .button a {
-    font-size: 13px;
+  .button.email-button {
+    padding: 15px 25px;
   }
-  // text--->
-  article p,
-  article h2 {
-    font-size: 15px;
+  .cart-button {
+    padding: 15px 10px;
+  }
+
+  .button a,
+  .button.email-button a,
+  .cart-button p {
+    font-size: 10px;
   }
   // wine page--->
   .product-text-info {
@@ -851,6 +1076,9 @@ footer .container {
   // animation--->
   .animate-text {
     font-size: 20px;
+  }
+  .text-animation-vin .animate-text {
+    font-size: 50px;
   }
 }
 
@@ -921,7 +1149,11 @@ body.product-white-wine {
   gap: 30px;
 }
 
-.product-white .bottle-decoration .cart-button {
+.product-white .cart-button {
+  background: #9b59cf;
+}
+
+.cart-button {
   display: flex;
   flex-direction: row;
   align-content: flex-end;
@@ -929,22 +1161,12 @@ body.product-white-wine {
   align-items: center;
   width: 100%;
   border-radius: 18px;
-  background: #9b59cf;
-  padding: 20px 30px;
+  // padding: 20px 30px;
 }
 
 .cart-button p {
-  font-family: "Scala Sans Pro";
-  font-size: 18px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   text-transform: uppercase;
-}
-
-.cart-button path {
-  width: 100%;
-  height: auto;
 }
 
 .Wine-call-to-action {
