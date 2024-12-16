@@ -148,6 +148,11 @@ header {
 .shadow-bottles-header img {
   width: 100%;
   height: 100%;
+  transition: scale 0.8s ease;
+}
+
+.shadow-bottles-header a img:hover {
+  transform: scale(3.1);
 }
 
 .wine-header .img-bottle-header {
@@ -250,7 +255,6 @@ header {
 }
 
 .logo-sda:hover {
-  animation-name: scale;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   transform: scale(1.1);
@@ -1084,42 +1088,20 @@ footer .container {
 
 // -------------------------------------------------
 // -------------------------------------------------
-// //////PAGE PRODUCT WHITE//////
 
+// //////PAGE PRODUCT/////
+
+// white---->
 body.product-white-wine {
   background: #c1a9d4;
 }
-
-.header-product {
-  margin-bottom: 0;
+.white-product-info {
+  background: #e6edaa;
 }
-
-.product-white {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 480px;
+.product-white-wine .Wine-call-to-action {
+  background: #c1a9d4;
 }
-
-.product-white .wine-header {
-  // position: absolute;
-  // top: 45%;
-  // height: 100%;
-  aspect-ratio: 30/40;
-  transform: translateY(40%);
-}
-
 .product-white .bottle-decoration {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px 30px;
-  width: 100%;
-  height: 100%;
-  border-radius: 80% 80% 0% 0% / 60% 60% 0%;
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -1128,16 +1110,69 @@ body.product-white-wine {
     radial-gradient(47.1% 48.13% at 50.17% 48.54%, #e6edaa 0%, #000 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.product-white .cart-button {
+  background: #9b59cf;
+}
+// Red---->
+body.product-red-wine {
+  background: #c66a6c;
+}
+.red-product-info {
+  background: #246471;
+}
+.product-red .bottle-decoration {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    radial-gradient(47.1% 48.13% at 50.17% 48.54%, #246471 0%, #000 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.product-red .cart-button {
+  background: #ea1f25;
+}
+// -------------------------------------------------
+.header-product {
+  margin-bottom: 0;
+}
 
-.product-white .img-bottle-header {
+.product-wine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 480px;
+}
+
+.product-wine .wine-header {
+  // position: absolute;
+  // top: 45%;
+  // height: 100%;
+  aspect-ratio: 30/40;
+  transform: translateY(40%);
+}
+
+.product-wine .bottle-decoration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 80% 80% 0% 0% / 60% 60% 0%;
+}
+
+.product-wine .img-bottle-header {
   position: absolute;
   bottom: 13%;
   width: 33%;
   height: auto;
 }
 
-.white-product-info {
-  background: #e6edaa;
+.product-info {
   margin: 0;
 }
 
@@ -1147,10 +1182,6 @@ body.product-white-wine {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.product-white .cart-button {
-  background: #9b59cf;
 }
 
 .cart-button {
@@ -1168,12 +1199,22 @@ body.product-white-wine {
   font-weight: 900;
   text-transform: uppercase;
 }
-
-.Wine-call-to-action {
-  background: #c1a9d4;
-}
 // -------------------------------------------------
 // hover--->
+
+.product-red .bottle-decoration:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    radial-gradient(47.1% 48.13% at 50.17% 48.54%, #ff0202 0%, #000 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-red .bottle-decoration .cart-button:hover {
+  background-color: #246471;
+}
 
 .product-white .bottle-decoration:hover {
   background: linear-gradient(
