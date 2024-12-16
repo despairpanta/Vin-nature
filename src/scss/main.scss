@@ -728,6 +728,9 @@ footer .container {
     margin-top: 240px;
     padding-bottom: 85px;
   }
+  .product-wine .bottle-decoration {
+    padding: 20px 30px;
+  }
   // article--->
   .cart-button svg {
     width: 27px;
@@ -781,6 +784,9 @@ footer .container {
   .product-text-info {
     margin-top: 240px;
     padding-bottom: 85px;
+  }
+  .product-wine .bottle-decoration {
+    padding: 15px 20px;
   }
   // article--->
   article {
@@ -935,6 +941,9 @@ footer .container {
     margin-top: 240px;
     padding-bottom: 85px;
   }
+  .product-wine .bottle-decoration {
+    padding: 15px 15px;
+  }
   // animation--->
   .animate-text {
     font-size: 20px;
@@ -1049,6 +1058,9 @@ footer .container {
     margin-top: 150px;
     padding-bottom: 50px;
   }
+  .product-wine .bottle-decoration {
+    padding: 15px 15px;
+  }
   // animation--->
   .animate-text {
     font-size: 20px;
@@ -1119,9 +1131,6 @@ body.product-red-wine {
 }
 
 .product-wine .wine-header {
-  // position: absolute;
-  // top: 45%;
-  // height: 100%;
   aspect-ratio: 30/40;
   transform: translateY(40%);
 }
@@ -1131,10 +1140,14 @@ body.product-red-wine {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20px 30px;
+  // padding: 20px 30px;
   width: 100%;
   height: 100%;
   border-radius: 80% 80% 0% 0% / 60% 60% 0%;
+}
+
+.product-wine .bottle-decoration a {
+  width: auto;
 }
 
 .product-wine .img-bottle-header {
@@ -1149,8 +1162,6 @@ body.product-red-wine {
 }
 
 .product-text-info {
-  // margin-top: 240px;
-  // padding-bottom: 85px;
   display: flex;
   flex-direction: column;
   gap: 30px;
