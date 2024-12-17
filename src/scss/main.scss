@@ -725,11 +725,14 @@ footer .container {
 
   // wine page--->
   .product-text-info {
-    margin-top: 240px;
+    margin-top: 270px;
     padding-bottom: 85px;
   }
   .product-wine .bottle-decoration {
     padding: 20px 30px;
+  }
+  .product-wine {
+    height: 515px;
   }
   // article--->
   .cart-button svg {
@@ -787,6 +790,9 @@ footer .container {
   }
   .product-wine .bottle-decoration {
     padding: 15px 20px;
+  }
+  .product-wine {
+    height: 350px;
   }
   // article--->
   article {
@@ -938,11 +944,14 @@ footer .container {
   }
   // wine page--->
   .product-text-info {
-    margin-top: 240px;
+    margin-top: 155px;
     padding-bottom: 85px;
   }
   .product-wine .bottle-decoration {
     padding: 15px 15px;
+  }
+  .product-wine {
+    height: 280px;
   }
   // animation--->
   .animate-text {
@@ -1006,6 +1015,9 @@ footer .container {
   }
   .article-content {
     gap: 20px;
+  }
+  .product-wine {
+    height: 235px;
   }
   // text--->
   article p,
@@ -1076,7 +1088,7 @@ footer .container {
 // //////PAGE PRODUCT/////
 
 // white---->
-body.product-white-wine {
+.product-white-wine header {
   background: #c1a9d4;
 }
 .white-product-info {
@@ -1098,11 +1110,14 @@ body.product-white-wine {
   background: #9b59cf;
 }
 // Red---->
-body.product-red-wine {
+.product-red-wine header {
   background: #c66a6c;
 }
 .red-product-info {
   background: #246471;
+}
+.product-red-wine .Wine-call-to-action {
+  background: #c66a6c;
 }
 .product-red .bottle-decoration {
   background: linear-gradient(
@@ -1127,12 +1142,12 @@ body.product-red-wine {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 480px;
+  // height: 480px;
 }
 
 .product-wine .wine-header {
   aspect-ratio: 30/40;
-  transform: translateY(40%);
+  transform: translateY(46%);
 }
 
 .product-wine .bottle-decoration {
@@ -1175,7 +1190,6 @@ body.product-red-wine {
   align-items: center;
   width: 100%;
   border-radius: 18px;
-  // padding: 20px 30px;
 }
 
 .cart-button p {
@@ -1219,11 +1233,3 @@ body.product-red-wine {
     fill: #000;
   }
 }
-
-// .product-white .bottle-decoration .cart-button a {
-//   display: flex;
-//   flex-direction: row;
-//   align-content: flex-end;
-//   justify-content: space-between;
-//   align-items: center;
-// }
