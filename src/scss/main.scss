@@ -196,7 +196,7 @@ header {
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 
 .header-background {
@@ -238,7 +238,7 @@ header {
 }
 
 .icon path {
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 // -------------------------------------------------
 // navigation hover--->
@@ -340,6 +340,18 @@ h2 {
   overflow: visible;
 }
 
+.decoration {
+  z-index: 3;
+  position: relative;
+  top: 33px;
+  left: 50%;
+  translate: -5%;
+}
+
+.decoration img {
+  position: static;
+}
+
 text {
   fill: #000;
   font-family: "Fakir Pro";
@@ -367,6 +379,7 @@ text {
   display: flex;
   flex-direction: column;
   margin-bottom: 85px;
+  cursor: url(../img/cursor-test-2.svg), auto;
 }
 
 .article-wine-presentation {
@@ -390,6 +403,10 @@ text {
   animation-iteration-count: infinite;
   filter: drop-shadow(0px 0px 25px #9b59cf);
 }
+
+// .wine-article {
+//   cursor: url(../img/merle-reverance.svg), auto;
+// }
 
 @keyframes wiggle {
   0% {
